@@ -1,0 +1,45 @@
+/*
+Anthoyn Pena
+Cs313 - Data Structures
+*/
+
+***Original code, before making changes***
+
+Average runtime in seconds (random arrays): 0.00852
+Average runtime in seconds (already-sorted arrays): Overflow 
+Average runtime in seconds (all-zero arrays): Overflow 
+
+(++numComparisons should be uncommented at this point)
+
+Average number of comparisons (random arrays): 2008047.91
+n = 100000
+nlogn = 500000
+Compared to nlogn, the number of comparisons is Much More (much more? slightly more? slightly less?)
+
+(++numComparisons should be commented-out at this point)
+
+
+***Modify quicksort to use insertion sort for small subarrays***
+
+Threshold = 8
+Average runtime in seconds (random arrays): 0.01094
+
+Threshold = 32
+Average runtime in seconds (random arrays): 0.0083
+
+Threshold = 64
+Average runtime in seconds (random arrays): 0.00936
+
+Threshold = 512
+Average runtime in seconds (random arrays): 0.01314
+
+The best threshold(s) seems to be 32
+
+(the threshold should be set to what you think is the best choice)
+
+
+***Modify partition to choose a random pivot***
+
+Average runtime in seconds (random arrays): 0.008
+Average runtime in seconds (already-sorted arrays): 0.00212
+Average runtime in seconds (all-zero arrays): 0.00249
