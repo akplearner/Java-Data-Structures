@@ -8,6 +8,8 @@ public class Timer{
     public static void main(String[] args){
         long start,end;
         
+        System.out.println("Testing the time for ArrayList vs LinkedList for 10,000,000 integers.");
+
         List<Integer> arrayList = new ArrayList<>(); // slower data structure
         start = System.currentTimeMillis();
         for(int i = 0; i < 10000000; ++i){

@@ -1,11 +1,27 @@
+import java.util.Scanner;
 
 public class BinarySearch {
 
    public static void main(String[] args) {
       int[] array = {3, 7, 11, 23, 25, 31, 39, 43, 47};
-      System.out.println(binarySearch(array, 31));
-      System.out.println(binarySearchRecursive(array, 31, 0, array.length-1));
-   }
+
+      System.out.println("Please enter number: ");
+      Scanner input = new Scanner(System.in);
+      try{
+            int num = input.nextInt();
+            System.out.println("Index is found on = ");
+            if(binarySearch(array, num)==-1){
+                  //System.out.println("not in array");
+                  throw new NumNotInArray();
+            }
+            System.out.println(binarySearch(array, num));
+            System.out.println(binarySearchRecursive(array, num, 0, array.length-1));
+            
+      }
+      catch(NumNotInArray e){
+            System.out.println("Catch - Not in array");
+      }
+}
    
    // Returns the key's index if found.  Otherwise returns -1.
    public static int binarySearch(int[] a, int key) {

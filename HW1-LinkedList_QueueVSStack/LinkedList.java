@@ -1,4 +1,3 @@
-
 public class LinkedList<E> implements List<E>, Stack<E> {
    private Node<E> first, last;
    private int size = 0;
@@ -103,8 +102,8 @@ public class LinkedList<E> implements List<E>, Stack<E> {
       Node<E> t = first;
       String cat = "[";
       for (int i = 0; i < size; i++){
-         t = t.next;
-         cat = cat + t.data;
+        t = t.next;
+        cat = cat + t.data;
         if(i<size-1){
               cat=cat+ " ";
         }
